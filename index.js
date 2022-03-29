@@ -5,4 +5,4 @@ app.use("/contact", require("./routes/contact"));
 app.get("/", (req, res) => {
     res.send({ status: 200, message: "API For `aditya.is-a.dev`" });
 });
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
