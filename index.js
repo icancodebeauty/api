@@ -1,4 +1,6 @@
 const app = require("express")();
+const cors = require('cors');
+app.use(cors());
 app.use("/blogs", require("./routes/blogs"));
 app.use("/projects", require("./routes/projects"));
 app.use("/contact", require("./routes/contact"));
